@@ -1,0 +1,51 @@
+{
+  "name": "stringify-accessor",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mark LeMerise",
+    "email": "mark@marklemerise.com"
+  },
+  "license": "MIT",
+  "description": "Typesafe, runtime stringification of property accessor paths powered by ES6 Proxies",
+  "scripts": {
+    "benchmark": "tsx ./src/index.benchmark.ts",
+    "benchmark:memoized": "tsx ./src/memoized.benchmark.ts",
+    "build": "vite build",
+    "lint": "oxlint",
+    "test:dev": "vitest --ui --coverage",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "stringify",
+    "accessor",
+    "typesafe",
+    "nameof",
+    "proxy",
+    "reflection"
+  ],
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "type": "module",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    }
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "2.1.2",
+    "@vitest/ui": "2.1.2",
+    "oxlint": "^0.9.9",
+    "prettier": "^3.3.3",
+    "tinybench": "^2.9.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^4.2.3",
+    "vitest": "^2.1.2"
+  }
+}
