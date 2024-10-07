@@ -1,12 +1,16 @@
 {
   "name": "stringify-accessor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Mark LeMerise",
     "email": "mark@marklemerise.com"
   },
   "license": "MIT",
   "description": "Typesafe, runtime stringification of property accessor paths powered by ES6 Proxies",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarkLeMerise/stringify-accessor"
+  },
   "scripts": {
     "benchmark": "tsx ./src/index.benchmark.ts",
     "benchmark:memoized": "tsx ./src/memoized.benchmark.ts",

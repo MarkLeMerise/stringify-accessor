@@ -127,7 +127,7 @@ export function MyForm() {
 
 #### With caching
 
-The `stringifyAccessor` function doesn't use caching, but it can be trivially added. There is a reference memoization implementation using `Map` in [memoization.benchmark.ts](src/memoization.benchmark.ts).
+The `stringifyAccessor` function doesn't use caching, but it can be trivially added. There is a reference memoization implementation using `Map` in [memoized.benchmark.ts](src/memoized.benchmark.ts).
 
 | Operation                                     | ops/sec   | Average Time (ns) | Margin | Samples |
 | --------------------------------------------- | --------- | ----------------- | ------ | ------- |
