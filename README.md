@@ -129,13 +129,13 @@ export function MyForm() {
 
 The `stringifyAccessor` function doesn't use caching, but it can be trivially added. There is a reference memoization implementation using `Map` in [memoized.benchmark.ts](src/memoized.benchmark.ts).
 
-| Operation                                     | ops/sec   | Average Time (ns) | Margin | Samples |
-| --------------------------------------------- | --------- | ----------------- | ------ | ------- |
-| 3-level property access (full path)           | 2,119,916 | 471.72            | ±3.54% | 10600   |
-| 3-level property & index access (full path)   | 2,323,370 | 430.41            | ±0.43% | 11617   |
-| 6-level property access (full path)           | 2,198,950 | 454.76            | ±0.52% | 10995   |
-| 6-level property & index access (full path)   | 2,186,722 | 457.31            | ±3.32% | 10934   |
-| 26-level property access (full path)          | 2,236,710 | 447.09            | ±3.20% | 11184   |
-| 26-level property access (final segment)      | 810,910   | 1233.18           | ±3.22% | 4055    |
-| Mixed index, property, and symbol access      | 803,526   | 1244.51           | ±4.02% | 4018    |
-| Accessing built-in properties (e.g. `Window`) | 2,321,672 | 430.72            | ±0.83% | 11609   |
+| Operation                                   | ops/sec   | Average Time (ns)  | Margin  | Samples |
+| ------------------------------------------- | --------- | ------------------ | ------- | ------- |
+| 3-level property access (full path)         | 1,142,291 | 875.4335173602115  | ±0.14%  | 11423   |
+| 3-level property & index access (full path) | 1,089,693 | 917.6895313660268  | ±6.64%  | 10897   |
+| 6-level property access (full path)         | 1,191,401 | 839.3473100922362  | ±0.16%  | 11915   |
+| 6-level property & index access (full path) | 1,092,840 | 915.0468961722853  | ±0.14%  | 10929   |
+| 26-level property access (full path)        | 642,842   | 1555.5921415274688 | ±11.47% | 6429    |
+| 26-level property access (final segment)    | 492,503   | 2030.440875780181  | ±0.13%  | 4926    |
+| Mixed index, property, and symbol access    | 555,239   | 1801.025442404724  | ±0.13%  | 5553    |
+| Accessing built-in properties               | 675,735   | 1479.868724452705  | ±1.84%  | 6758    |
